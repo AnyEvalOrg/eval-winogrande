@@ -1,0 +1,45 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "winogrande",
+    "slug": "winogrande",
+    "title": "WINOGRANDE: An Adversarial Winograd Schema Challenge at Scale",
+    "group": "Reasoning",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/winogrande",
+    "inspect_ai": "0.3.260",
+    "eval_version": "2-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "plain",
+    "cost_class": "medium",
+    "sandbox": null,
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "winogrande",
+      "samples": 1267
+    }
+  ],
+  "total_samples": 1267,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "allenai/winogrande",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
